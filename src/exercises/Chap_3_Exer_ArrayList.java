@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.ArrayList;
 
-public class ArrayListPractice {
+public class Chap_3_Exer_ArrayList {
 
     public static void main(String[] args) {
 
@@ -19,10 +19,8 @@ public class ArrayListPractice {
                 total += number;
             }
         }
-//        return total;
 
         System.out.println("Sum of even numbers: " + total);
-        System.out.println(numArrayList);
+//        System.out.println(numArrayList);
     }
-
 }

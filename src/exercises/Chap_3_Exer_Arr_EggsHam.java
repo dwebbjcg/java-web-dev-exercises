@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Arrays;
 
-public class eggsHamString {
+public class Chap_3_Exer_Arr_EggsHam {
 
     public static void main(String[] args) {
 

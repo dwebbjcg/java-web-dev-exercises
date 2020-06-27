@@ -1,6 +1,6 @@
 package exercises;
 
-public class ArrayExercises {
+public class Chap_3_Exer_Arrays {
 
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class ArrayExercises {
 //            System.out.println(i);
 //        }
 
-//  Make Array print odd numbers
+//  Make Array print odd numbers only
 
         for (int oneInt : randArray) {
             if (oneInt % 2 == 1) {

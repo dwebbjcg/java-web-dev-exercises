@@ -3,7 +3,7 @@ package exercises;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PrintPlay {
+public class Chap_3_Exer_ArrList_PrintPlay {
 
     public static void main(String[] args) {
 
@@ -17,7 +17,8 @@ public class PrintPlay {
         printPlay.add("Antioxidants");
         printPlay.add("Tires");
 
-        System.out.println("Enter a word length (or ENTER to finish):");
+        System.out.println("Enter a word (or ENTER to finish):");
+//        System.out.println(printPlay);
 
         do {
             searchWord = input.nextLine();
@@ -29,7 +30,7 @@ public class PrintPlay {
         } while(!searchWord.equals(""));
 
         for (String word : printPlay) {
-            if ( word.length() == 5) {
+            if (word.length() == 5) {
                 System.out.println(input);
             }
         }
