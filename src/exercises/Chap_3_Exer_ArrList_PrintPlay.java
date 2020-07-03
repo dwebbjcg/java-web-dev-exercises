@@ -9,7 +9,7 @@ public class Chap_3_Exer_ArrList_PrintPlay {
 
         ArrayList<String> printPlay = new ArrayList<>();
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a word length (or ENTER to finish):");
+        System.out.println("Enter a word length:");
         int searchTerm = input.nextInt();
 
         printPlay.add("Discover");
@@ -23,8 +23,8 @@ public class Chap_3_Exer_ArrList_PrintPlay {
         for (String word : printPlay) {
             if (word.length() == searchTerm) {
                 System.out.println(word);
-                break;
-         } // else {
+                continue;
+         }  //else {
 //                System.out.println("No results found. Please try again.");
 //            }
         }
