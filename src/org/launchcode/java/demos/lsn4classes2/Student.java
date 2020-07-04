@@ -30,7 +30,6 @@ public class Student {
         return (this.name + " has a GPA of: " + this.gpa);
     }
 
-
      //TODO: Uncomment and complete the getGradeLevel method here:
 //        // Determine the grade level of the student based on numberOfCredits
     public String getGradeLevel() {
