@@ -2,7 +2,7 @@ package org.launchcode.java.demos.lsn3classes1;
 
 import java.util.ArrayList;
 
-class Course {
+public class Course {
 
     private String courseName;
     private ArrayList numberOfStudents;
