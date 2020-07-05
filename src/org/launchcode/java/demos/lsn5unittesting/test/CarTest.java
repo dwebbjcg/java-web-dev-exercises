@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.launchcode.java.demos.lsn5unittesting.main.Car;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class CarTest {
 
@@ -29,5 +30,25 @@ public class CarTest {
     public void testInitialGasTank() {
         test_car = new Car("Toyota", "Prius", 10, 50);
         assertEquals(10, test_car.getGasTankLevel(), .001);
+    }
+
+    // Exercises code
+
+    @Test
+    public void testGasTankAfterDriving() {
+        test_car.drive(50);
+        assertEquals(9, test_car.getGasTankLevel(), .001);
+    }
+
+    @Test
+    public void testGasTankAfterExceedTankRange() {
+        test_car.drive(505);
+        assertEquals(0, test_car.getGasTankLevel(), .001);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testGasOverfillException() {
+        test_car.addGas(10);
+        fail("Tank size exceeded!");
     }
 }
